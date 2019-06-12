@@ -55,3 +55,10 @@ test2.speak()
 
 // code example for Explicit Binding
 
+function example4(skill1, skill2, skill3) {
+    return `I have 3 skills: ${skill1}, ${skill1}, ${skill1}`
+}
+
+const skills = ['skill1', 'skill2', 'skill3']
+
+console.log(example4.call(null, ...skills))
